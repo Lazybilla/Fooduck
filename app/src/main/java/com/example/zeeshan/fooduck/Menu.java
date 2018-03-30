@@ -22,9 +22,9 @@ public class Menu extends AppCompatActivity {
 
 
 
-        mTest1 = new AHBottomNavigationItem("Menu",R.drawable.icons8_food_50);
-        mTest2 = new AHBottomNavigationItem("Oraganic",R.drawable.icons8_fish_food_50);
-        mTest3 = new AHBottomNavigationItem("Delivery",R.drawable.icons8_deliver_food_50);
+        mTest1 = new AHBottomNavigationItem("Menu",R.drawable.icons8food50);
+        mTest2 = new AHBottomNavigationItem("Oraganic",R.drawable.icons8fishfood50);
+        mTest3 = new AHBottomNavigationItem("Delivery",R.drawable.icons8deliverfood50);
 
 
 
@@ -32,6 +32,22 @@ public class Menu extends AppCompatActivity {
         mNavigation.addItem(mTest2);
         mNavigation.addItem(mTest3);
 
+
+    mNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
+        @Override
+        public boolean onTabSelected(int position, boolean wasSelected) {
+
+
+
+
+
+
+
+
+
+            return false;
+        }
+    });
 
 
 
